@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			#wrap{
+				display: flex;
+				width: 500px;
+				height: 100px;
+				margin: 50px auto;
+				background-color: black;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+			}
+			
+			#wrap>ul,#wrap>div{
+				width: 60px;
+				height: 60px;
+				background-color: gainsboro;
+				border: 3px solid #BCB9B9;
+				border-bottom-color: gray;
+				border-top-color: white;
+				
+				border-radius: 6px;
+			}
+			ul>li{
+				width: 10px;
+				height: 6px;
+				border-bottom-width: 2px;
+			    border-bottom-color: white;
+			    border-bottom-style: solid;
+			    border-top-width: 2px;
+			    border-top-color: #3E3E3E;
+			    border-top-style: solid;
+			    
+				margin: 5px;
+				background-color: grey;
+				border-radius: 50%;
+			}
+			#two>li,#four>li{
+				margin: 10px;
+			}
+			#one li{
+				width: 15px;
+				height: 12px;
+				background-color: red;
+			}
+			#one{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#two{
+				display: flex;
+				justify-content: center;
+			}
+			#two .two2{
+				align-self: flex-end;
+				align-items: center;
+			}
+			#three{
+				display: flex;
+			}
+			#three .three2{
+				align-self: center;
+			}
+			#three .three3{
+				align-self: flex-end;
+			}
+			#four{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#five{
+				display: flex;
+			}
+			#five .five1{
+				display: flex;
+  				flex-direction: column;
+  				justify-content: space-between;
+			}
+			#five .five2{
+				display: flex;
+				align-items: center;
+			}
+			#five .five3{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+			}
+
+
+			#six{
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				align-content: space-around;
+			}
+			
+			
+		
+	
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<ul id="one">
+				<li></li>
+			</ul>
+
+			<ul id="two">
+				<li></li>
+				<li class="two2"></li>
+			</ul>
+			<ul id="three">
+				<li></li>
+				<li class="three2"></li>
+				<li class="three3"></li>
+			</ul>
+			<ul id="four">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div id="five">
+				<ul class="five1">
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="five2">
+					<li></li>
+				</ul>
+				<ul class="five3">
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<ul id="six">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+
+		</div>
+	</body>
+</html>
